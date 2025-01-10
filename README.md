@@ -27,7 +27,6 @@ The plugin registers a custom REST API route:
   - `keyword` (string, required): The keyword to analyze.
   - `page` (integer, optional): The page number (default: `1`).
   - `per_page` (integer, optional): The number of posts per page (default: `10`).
-  - `filter::category` (string, optional): Filter posts by category.
 
 ## Requirements
 - WordPress 5.0 or higher
