@@ -17,7 +17,17 @@ A WordPress plugin that analyzes post content for word count and keyword density
 5. Activate the plugin from the `Plugins` page.
 
 ## Usage
+### Frontend Table
 Add the shortcode `[content_analyzer]` to any page or post where you want the analysis table to appear.
+### REST API
+The plugin registers a custom REST API route:
+- **Endpoint**: `/wp-json/content-analyzer/v1/analyze`
+- **Methods**: `GET`
+- **Parameters**:
+  - `keyword` (string, required): The keyword to analyze.
+  - `page` (integer, optional): The page number (default: `1`).
+  - `per_page` (integer, optional): The number of posts per page (default: `10`).
+  - `filter::category` (string, optional): Filter posts by category.
 
 ## Requirements
 - WordPress 5.0 or higher
